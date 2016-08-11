@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="../../lib/reset.css" />
+		<link rel="stylesheet" href="./css/demo.css" />
+		<title>em-rem</title>
+	</head>
+	<body>
+		<header>
+			<h1>微信(21)</h1>
+			<i class="back"></i>
+			<i class="option"></i>
+		</header>
+		<div class="li">
+			<span>朋友圈</span>
+		</div>
+		<div class="li">
+			<span class="border">扫一扫</span>
+			<span>摇一摇</span>
+		</div>
+		<div class="li">
+			<span class="border">附近的人</span>
+			<span>漂流瓶</span>
+		</div>
+		<div class="li">
+			<span class="border">购物</span>
+			<span>游戏</span>
+		</div>
+		<footer>
+			<div class="nav">微信</div>
+			<div class="nav">通讯录</div>
+			<div class="nav">发现</div>
+			<div class="nav">我</div>
+		</footer>
+		<script>	
+			function setRem(){
+				document.documentElement.style.fontSize = window.innerWidth / 20 + "px";
+			}
+			window.onresize = function(){
+				setRem();
+			};
+			setRem();
+		</script>
+	</body>
+</html>

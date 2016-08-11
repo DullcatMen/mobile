@@ -1,0 +1,55 @@
+//px不会由于父级样式影响子集px样式
+//em会根据父级样式进行等比缩放
+//rem会根据根级(html)样式进行等比缩放，如果没有则取html标签的px值，默认16px
+body
+	background-color #eee
+	header
+		position relative
+		width 20em
+		height 3em
+		background-color #444
+		h1
+			text-indent 1.2em
+			font-size 1em
+			line-height 3em
+			color #fff
+		i
+			position absolute
+			top .8em
+			display block
+			width 1.6em
+			height 1.6em
+			background-color red
+			&.back
+				right 1em
+			&.option
+				right 3.6em
+	.li
+		width 20rem
+		background-color #fff
+		margin 1rem 0
+		padding 0 10px
+		span
+			display block
+			line-height 2.5rem
+			font-size .875rem
+			text-indent 4em
+			&.border
+				border-bottom 1px solid #eee
+	footer
+		width 20rem
+		height 3.6rem
+		background-color #fff
+		position absolute
+		bottom 0
+		border-top 1px solid #ddd
+		.nav
+			width 25%
+			line-height 3.6rem
+			text-align center
+			font-size .75rem
+			float left
+			color #aaa
+			
+
+			
